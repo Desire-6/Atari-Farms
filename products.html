@@ -1,0 +1,1272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="products.css">
+    <link rel="stylesheet" href="mobile.css">
+    <title>Atari Farms</title>
+</head>
+<body>
+
+    <nav>
+        <ul class="main-nav">
+            <li class="logo"><a href="index.html">
+              <img src="images/logo.png" alt="ATARI FARMS">
+              <div class="logo-text">
+                <h3> ATARI FARMS</h3>
+                <P> Sexy Farming</P>
+              </div>
+            </a></li>
+            <div class="nav-center"> 
+                <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="products.html" class="active">Products</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            </div>
+            <div class="nav-right"> 
+            <li><a href="">Cart</a></li>
+            <li><a href="">Login</a></li>
+            <li><a href="" class="signup-btn">Sign Up</a></li>
+            </div>
+        </ul>
+    </nav>
+    <section class="products-hero">
+
+    <div class="hero-content">
+
+        <div class="hero-badge">
+
+            <span>Natural • Sustainable • Made in Uganda</span>
+
+        </div>
+
+        <img src="Images/avoglow-logo.png"
+             alt="Avoglow Logo"
+             class="hero-logo">
+
+        <h1>
+
+            Nourish.
+            Restore.
+            Glow Naturally.
+
+        </h1>
+
+        <p>
+
+            Discover premium avocado-powered products
+            crafted to support healthy hair, radiant skin
+            and everyday wellness.
+
+        </p>
+
+        <div class="hero-buttons">
+
+            <a href="#products"
+               class="shop-btn">
+
+                Shop Collection
+
+            </a>
+
+            <a href="#products"
+               class="explore-btn">
+
+                Explore Products
+
+            </a>
+
+        </div>
+
+    </div>
+
+    <div class="hero-images">
+
+        <div class="hero-product product-1">
+
+            <img src="Images/root-revive.png"
+                 alt="Root & Revive">
+
+        </div>
+
+        <div class="hero-product product-2">
+
+            <img src="Images/hair-butter.png"
+                 alt="Hair Butter">
+
+        </div>
+
+        <div class="hero-product product-3">
+
+            <img src="Images/pure-avocado-oil.png"
+                 alt="Pure Avocado Oil">
+
+        </div>
+
+    </div>
+
+</section>
+<section class="shop-toolbar">
+
+    <div class="products-count">
+
+        <p>Showing <span>7 Products</span></p>
+
+    </div>
+
+    <div class="product-filters">
+
+        <button class="filter-btn active">
+            All Products
+        </button>
+
+        <button class="filter-btn">
+            Natural Oils
+        </button>
+
+        <button class="filter-btn">
+            Hair Care
+        </button>
+
+        <button class="filter-btn">
+            Bundles
+        </button>
+
+        <button class="filter-btn">
+            Wellness
+        </button>
+
+    </div>
+
+    <div class="sort-products">
+
+        <select>
+
+            <option>
+                Sort By
+            </option>
+
+            <option>
+                Price: Low to High
+            </option>
+
+            <option>
+                Price: High to Low
+            </option>
+
+            <option>
+                Name: A-Z
+            </option>
+
+            <option>
+                Newest
+            </option>
+
+        </select>
+
+    </div>
+
+</section>
+<section class="products-section" id="products">
+
+    <div class="section-heading">
+
+        <span>SHOP COLLECTION</span>
+
+        <h2>Find Your Perfect Product</h2>
+
+        <p>
+            Explore our complete collection of natural oils,
+            hair care solutions and wellness products.
+        </p>
+
+    </div>
+
+    <div class="products-grid">
+
+        <!-- PURE AVOCADO OIL -->
+
+        <div class="product-card">
+
+            <div class="product-image"
+                 onclick="openProduct('pure-avocado-oil')">
+
+                <img src="Images/pure-avocado-oil.png"
+                     alt="Pure Avocado Oil">
+
+            </div>
+
+            <div class="product-content">
+
+                <span class="product-category">
+                    Natural Oils
+                </span>
+
+                <h3 class="product-title"
+                    onclick="openProduct('pure-avocado-oil')">
+
+                    Pure Avocado Oil
+
+                </h3>
+
+                <p>
+                    Deeply moisturizes skin and hair with
+                    100% cold-pressed avocado oil.
+                </p>
+
+                <div class="product-sizes">
+
+                    <button class="size-btn active"
+                    data-price="10000">
+
+                        50ml
+
+                    </button>
+
+                    <button class="size-btn"
+                    data-price="20000">
+
+                        100ml
+
+                    </button>
+
+                </div>
+
+                <div class="product-footer">
+
+                    <h4 class="product-price">
+                        UGX 10,000
+                    </h4>
+
+                    <button class="cart-btn">
+                        Add To Cart
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- ROSEMARY OIL -->
+
+        <div class="product-card">
+
+            <div class="product-image"
+                 onclick="openProduct('rosemary-oil')">
+
+                <img src="Images/rosemary-oil.png"
+                     alt="Rosemary Oil">
+
+            </div>
+
+            <div class="product-content">
+
+                <span class="product-category">
+                    Natural Oils
+                </span>
+
+                <h3 class="product-title"
+                    onclick="openProduct('rosemary-oil')">
+
+                    Avocado Oil + Rosemary
+
+                </h3>
+
+                <p>
+                    Nourishes hair and scalp while promoting
+                    stronger, healthier hair growth.
+                </p>
+
+                <div class="product-sizes">
+
+                    <button class="size-btn active"
+                    data-price="15000">
+
+                        50ml
+
+                    </button>
+
+                    <button class="size-btn"
+                    data-price="25000">
+
+                        100ml
+
+                    </button>
+
+                </div>
+
+                <div class="product-footer">
+
+                    <h4 class="product-price">
+                        UGX 15,000
+                    </h4>
+
+                    <button class="cart-btn">
+                        Add To Cart
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- LAVENDER OIL -->
+
+        <div class="product-card">
+
+            <div class="product-image"
+                 onclick="openProduct('lavender-oil')">
+
+                <img src="Images/lavender-oil.png"
+                     alt="Lavender Oil">
+
+            </div>
+
+            <div class="product-content">
+
+                <span class="product-category">
+                    Natural Oils
+                </span>
+
+                <h3 class="product-title"
+                    onclick="openProduct('lavender-oil')">
+
+                    Avocado Oil + Lavender
+
+                </h3>
+
+                <p>
+                    A soothing blend that moisturizes,
+                    calms and nourishes skin and hair.
+                </p>
+
+                <div class="product-sizes">
+
+                    <button class="size-btn active"
+                    data-price="15000">
+
+                        50ml
+
+                    </button>
+
+                    <button class="size-btn"
+                    data-price="25000">
+
+                        100ml
+
+                    </button>
+
+                </div>
+
+                <div class="product-footer">
+
+                    <h4 class="product-price">
+                        UGX 15,000
+                    </h4>
+
+                    <button class="cart-btn">
+                        Add To Cart
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- ROOT & REVIVE -->
+
+        <div class="product-card">
+
+            <div class="product-image"
+                 onclick="openProduct('root-revive')">
+
+                <img src="Images/root-revive.png"
+                     alt="Root & Revive">
+
+            </div>
+
+            <div class="product-content">
+
+                <span class="product-category">
+                    Hair Care
+                </span>
+
+                <h3 class="product-title"
+                    onclick="openProduct('root-revive')">
+
+                    Root & Revive
+
+                </h3>
+
+                <p>
+                    Triple Active Hair Elixir designed to
+                    nourish the scalp and strengthen roots.
+                </p>
+
+                <div class="product-sizes">
+
+                    <button class="size-btn active"
+                    data-price="25000">
+
+                        50ml
+
+                    </button>
+
+                    <button class="size-btn"
+                    data-price="45000">
+
+                        100ml
+
+                    </button>
+
+                </div>
+
+                <div class="product-footer">
+
+                    <h4 class="product-price">
+                        UGX 25,000
+                    </h4>
+
+                    <button class="cart-btn">
+                        Add To Cart
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- HAIR BUTTER -->
+
+        <div class="product-card">
+
+            <div class="product-image"
+                 onclick="openProduct('hair-butter')">
+
+                <img src="Images/hair-butter.png"
+                     alt="Hair Butter">
+
+            </div>
+
+            <div class="product-content">
+
+                <span class="product-category">
+                    Hair Care
+                </span>
+
+                <h3 class="product-title"
+                    onclick="openProduct('hair-butter')">
+
+                    Intensive Hair Butter
+
+                </h3>
+
+                <p>
+                    Deep conditioning treatment for stronger,
+                    softer and healthier natural hair.
+                </p>
+
+                <div class="product-sizes">
+
+                    <button class="size-btn active"
+                    data-price="25000">
+
+                        100g
+
+                    </button>
+
+                    <button class="size-btn"
+                    data-price="50000">
+
+                        200g
+
+                    </button>
+
+                </div>
+
+                <div class="product-footer">
+
+                    <h4 class="product-price">
+                        UGX 25,000
+                    </h4>
+
+                    <button class="cart-btn">
+                        Add To Cart
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- POWER DUO -->
+
+        <div class="product-card">
+
+            <div class="product-image"
+                 onclick="openProduct('power-duo')">
+
+                <img src="Images/avoglow-bundle.png"
+                     alt="Power Duo">
+
+            </div>
+
+            <div class="product-content">
+
+                <span class="product-category">
+                    Bundle
+                </span>
+
+                <h3 class="product-title"
+                    onclick="openProduct('power-duo')">
+
+                    Avoglow Power Duo
+
+                </h3>
+
+                <p>
+                    The ultimate hair growth bundle
+                    combining Root & Revive and Hair Butter.
+                </p>
+
+                <div class="product-sizes">
+
+                    <button class="size-btn active"
+                    data-price="50000">
+
+                        Small
+
+                    </button>
+
+                    <button class="size-btn"
+                    data-price="90000">
+
+                        Large
+
+                    </button>
+
+                </div>
+
+                <div class="product-footer">
+
+                    <h4 class="product-price">
+                        UGX 50,000
+                    </h4>
+
+                    <button class="cart-btn">
+                        Add To Cart
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- AVOCHAI -->
+
+        <div class="product-card">
+
+            <div class="product-image"
+                 onclick="openProduct('avochai')">
+
+                <img src="Images/avochai.png"
+                     alt="AvoChai">
+
+            </div>
+
+            <div class="product-content">
+
+                <span class="product-category">
+                    Wellness
+                </span>
+
+                <h3 class="product-title"
+                    onclick="openProduct('avochai')">
+
+                    AvoChai
+
+                </h3>
+
+                <p>
+                    A delicious caffeine-free wellness tea
+                    crafted from avocado seeds and spices.
+                </p>
+
+                <div class="product-sizes">
+
+                    <button class="size-btn active"
+                    data-price="12000">
+
+                        100g
+
+                    </button>
+
+                </div>
+
+                <div class="product-footer">
+
+                    <h4 class="product-price">
+                        UGX 12,000
+                    </h4>
+
+                    <button class="cart-btn">
+                        Add To Cart
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+<!-- PRODUCT MODAL -->
+
+<div class="product-modal" id="productModal">
+<div class="modal-content">
+
+    <span class="close-modal">&times;</span>
+
+    <div class="modal-grid">
+
+        <div class="modal-image">
+
+            <img id="modalProductImage"
+                 src=""
+                 alt="Product Image">
+
+        </div>
+
+        <div class="modal-details">
+
+            <span id="modalCategory"
+                  class="modal-category">
+            </span>
+
+            <h2 id="modalTitle"></h2>
+
+          <h3 id="modalPrice"></h3>
+
+<div class="modal-reviews"
+     id="modalReviews">
+</div>
+
+            <div class="product-highlights">
+
+                <span>✓ Natural Ingredients</span>
+                <span>✓ Premium Quality</span>
+                <span>✓ Hair & Skin Care</span>
+                <span>✓ Customer Favourite</span>
+
+            </div>
+
+     <div class="product-options">
+
+    <div>
+        <h4>Select Size</h4>
+        <div id="modalSizes" class="modal-sizes"></div>
+    </div>
+
+    <div>
+        <h4>Quantity</h4>
+
+        <div class="quantity-box">
+            <button id="minusQty">-</button>
+
+            <input type="number"
+                   id="productQty"
+                   value="1"
+                   min="1">
+
+            <button id="plusQty">+</button>
+        </div>
+    </div>
+
+</div>
+
+          <div class="modal-actions">
+
+    <button class="cart-btn">
+        Add To Cart
+    </button>
+
+</div>
+
+           <div class="product-tabs">
+
+    <button class="tab-btn active"
+            data-tab="description">
+        Description
+    </button>
+
+    <button class="tab-btn"
+            data-tab="benefits">
+        Benefits
+    </button>
+
+    <button class="tab-btn"
+            data-tab="ingredients">
+        Ingredients
+    </button>
+
+</div>
+
+<div class="tab-content active"
+     id="description">
+
+    <p id="modalDescription"></p>
+
+</div>
+
+<div class="tab-content"
+     id="benefits">
+
+    <ul id="modalBenefits"></ul>
+
+</div>
+
+<div class="tab-content"
+     id="ingredients">
+
+    <p id="modalIngredients"></p>
+
+</div>
+<div class="modal-section">
+
+    <h4>Ideal For</h4>
+
+    <div id="modalIdealFor"></div>
+
+</div>
+
+            <div class="modal-section">
+
+                <h4>How To Use</h4>
+
+                <p id="modalUsage"></p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+</div>
+
+<script>
+
+/* SIZE SELECTION */
+
+document.querySelectorAll(".size-btn").forEach(button => {
+
+    button.addEventListener("click", function () {
+
+        const card = this.closest(".product-card");
+
+        card.querySelectorAll(".size-btn").forEach(btn => {
+            btn.classList.remove("active");
+        });
+
+        this.classList.add("active");
+
+        const price = parseInt(this.dataset.price);
+
+        card.querySelector(".product-price").textContent =
+            "UGX " + price.toLocaleString();
+
+    });
+
+});
+/* TABS */
+
+document
+.querySelectorAll(".tab-btn")
+.forEach(button => {
+
+    button.addEventListener("click", () => {
+
+        document
+        .querySelectorAll(".tab-btn")
+        .forEach(btn => btn.classList.remove("active"));
+
+        document
+        .querySelectorAll(".tab-content")
+        .forEach(tab => tab.classList.remove("active"));
+
+        button.classList.add("active");
+
+        document
+        .getElementById(button.dataset.tab)
+        .classList.add("active");
+
+    });
+
+});
+
+
+/* QUANTITY */
+
+document.getElementById("plusQty")
+.addEventListener("click", () => {
+
+    const qty =
+    document.getElementById("productQty");
+
+    qty.value = parseInt(qty.value) + 1;
+
+});
+
+document.getElementById("minusQty")
+.addEventListener("click", () => {
+
+    const qty =
+    document.getElementById("productQty");
+
+    if(parseInt(qty.value) > 1){
+
+        qty.value = parseInt(qty.value) - 1;
+
+    }
+
+});
+
+/* PRODUCT DATABASE */
+
+const products = {
+
+    "pure-avocado-oil": {
+
+        title: "Pure Avocado Oil",
+
+        category: "Natural Oils",
+
+        reviews: "★★★★★ (18 Reviews)",
+
+        image: "Images/pure-avocado-oil.png",
+
+        sizes: {
+            "50ml": "UGX 10,000",
+            "100ml": "UGX 20,000"
+        },
+
+        description:
+        "Avoglow Pure Avocado Oil is cold-pressed from carefully selected avocados to preserve essential nutrients that help nourish both skin and hair. Rich in vitamins and healthy fatty acids, it helps moisturize, soften and support healthy-looking skin and hair.",
+
+        benefits: [
+            "Deeply moisturizes dry skin and hair",
+            "Improves softness and smoothness",
+            "Supports healthy-looking skin",
+            "Adds natural shine to hair",
+            "Lightweight and easily absorbed"
+        ],
+
+        ingredients:
+        "100% Cold-Pressed Avocado Oil",
+
+        usage:
+        "Apply directly to skin or hair daily. Can be used as a moisturizer, scalp oil, massage oil or hair sealant.",
+         idealFor: [
+            "Dry skin",
+            "Dry hair",
+            "Natural hair care routines",
+            "Daily moisturizing",
+        ]
+    },
+
+    "rosemary-oil": {
+
+        title: "Avocado Oil + Rosemary",
+
+        category: "Natural Oils",
+
+        reviews: "★★★★★ (24 Reviews)",
+
+        image: "Images/rosemary-oil.png",
+
+        sizes: {
+            "50ml": "UGX 15,000",
+            "100ml": "UGX 25,000"
+        },
+
+        description:
+        "A nourishing blend of avocado oil and rosemary essential oil formulated to support healthier hair and scalp care routines. It helps moisturize the scalp while improving overall hair appearance.",
+
+        benefits: [
+            "Supports healthy hair growth routines",
+            "Nourishes the scalp",
+            "Adds moisture and shine",
+            "Helps reduce scalp dryness",
+            "Promotes healthier-looking hair"
+        ],
+
+        ingredients:
+        "Avocado Oil, Rosemary Essential Oil",
+
+        usage:
+        "Massage into scalp and hair. Use regularly as part of your hair care routine.",
+         idealFor: [
+            "Dry skin",
+            "Dry scalp",
+            "Natural hair care",
+            "Hair maintenance routines",
+            "Daily moisturizing"
+        ]
+    },
+
+    "lavender-oil": {
+
+        title: "Avocado Oil + Lavender",
+
+        category: "Natural Oils",
+
+        reviews: "★★★★★ (20 Reviews)",
+
+        image: "Images/lavender-oil.png",
+
+        sizes: {
+            "50ml": "UGX 15,000",
+            "100ml": "UGX 25,000"
+        },
+
+        description:
+        "A soothing blend of avocado oil and lavender essential oil designed to moisturize and care for both skin and hair while providing a calming experience.",
+
+        benefits: [
+            "Moisturizes skin and hair",
+            "Helps calm and soothe the scalp",
+            "Adds softness and shine",
+            "Supports healthy-looking hair",
+            "Pleasant natural fragrance"
+        ],
+
+        ingredients:
+        "Avocado Oil, Lavender Essential Oil",
+
+        usage:
+        "Apply to hair, scalp or skin as needed.",
+         idealFor: [
+            "Dry skin",
+            "Dry hair",
+            "Daily moisturizing",
+            "Family skincare routines"
+        ]
+    },
+
+    "root-revive": {
+
+        title: "Root & Revive Triple Active Hair Elixir",
+
+        category: "Hair Care",
+
+        reviews: "★★★★★ (48 Reviews)",
+
+        image: "Images/root-revive.png",
+
+        sizes: {
+            "50ml": "UGX 25,000",
+            "100ml": "UGX 45,000"
+        },
+
+        description:
+        "Root & Revive is a Triple Active Hair Elixir formulated to nourish the scalp, support healthier roots and promote stronger healthier-looking hair. Crafted with carefully selected oils and essential oils for a complete scalp care experience.",
+
+        benefits: [
+            "Nourishes the scalp",
+            "Supports stronger roots",
+            "Helps improve hair appearance",
+            "Supports healthier hair routines",
+            "Helps reduce scalp dryness"
+        ],
+
+        ingredients:
+        "Infused Avocado Oil, Jojoba Oil, Castor Oil, Vitamin E, Rosemary Essential Oil, Lavender Essential Oil, Cedarwood Essential Oil, Peppermint Essential Oil",
+
+        usage:
+        "Apply directly to the scalp and massage gently. Use consistently 2–3 times per week.",
+
+        idealFor: [
+            "Weak hair",
+            "Thinning hair",
+            "Weak edges",
+            "Dry scalp",
+            "Hair maintenance routines"
+        ]
+    },
+
+    "hair-butter": {
+
+        title: "Intensive Hair Butter",
+
+        category: "Hair Care",
+
+        reviews: "★★★★★ (42 Reviews)",
+
+        image: "Images/hair-butter.png",
+
+        sizes: {
+            "100g": "UGX 25,000",
+            "200g": "UGX 50,000"
+        },
+
+        description:
+        "Avoglow Intensive Hair Butter is a rich blend of nourishing butters and oils designed to moisturize, soften and protect dry, fragile hair. It helps seal in moisture, reduce breakage and support length retention.",
+
+        benefits: [
+            "Deeply moisturizes dry hair",
+            "Helps reduce breakage",
+            "Supports length retention",
+            "Improves softness and manageability",
+            "Protects fragile hair strands"
+        ],
+
+        ingredients:
+        "Shea Butter, Mango Butter, Infused Avocado Oil, Jojoba Oil, Castor Oil, Vitamin E, Essential Oil Blend",
+
+        usage:
+        "Apply to damp or dry hair focusing on lengths and ends. Use to seal in moisture.",
+
+        idealFor: [
+            "Natural hair",
+            "Dry hair",
+            "4C hair",
+            "Protective styles",
+            "Hair prone to breakage"
+        ]
+    },
+
+    "power-duo": {
+
+        title: "Avoglow Power Duo",
+
+        category: "Bundle",
+
+        reviews: "★★★★★ (35 Reviews)",
+
+        image: "Images/avoglow-bundle.png",
+
+        sizes: {
+            "50ml + 100g": "UGX 50,000",
+            "100ml + 200g": "UGX 90,000"
+        },
+
+        description:
+        "The Avoglow Power Duo combines Root & Revive Triple Active Hair Elixir with Intensive Hair Butter to create a complete scalp and hair care routine for stronger healthier-looking hair.",
+
+        benefits: [
+            "Supports healthier roots",
+            "Helps lock in moisture",
+            "Reduces breakage",
+            "Supports length retention",
+            "Complete hair care routine"
+        ],
+
+        ingredients:
+        "Root & Revive Triple Active Hair Elixir + Intensive Hair Butter",
+
+        usage:
+        "Use Root & Revive on the scalp and follow with Intensive Hair Butter on the hair lengths.",
+
+        idealFor: [
+            "Weak edges",
+            "Hair breakage",
+            "Dry hair",
+            "Weak hair",
+            "Thinning hair",
+            "Length retention"
+        ]
+    },
+
+    "avochai": {
+
+        title: "AvoChai",
+
+        category: "Wellness",
+
+        reviews: "★★★★★ (15 Reviews)",
+
+        image: "Images/avochai.png",
+
+        sizes: {
+            "100g": "UGX 12,000"
+        },
+
+        description:
+        "AvoChai is a unique caffeine-free wellness drink crafted from avocado seeds and carefully selected spices. It delivers a rich warming flavour that can be enjoyed any time of the day.",
+
+        benefits: [
+            "Caffeine-free",
+            "Made from avocado seeds",
+            "Rich warming flavour",
+            "Crafted from natural ingredients",
+            "Suitable for any time of day"
+        ],
+
+        ingredients:
+        "Avocado Seeds, Natural Spice Blend",
+
+        usage:
+        "Serve hot and enjoy plain or with your preferred sweetener."
+    }
+
+};
+
+/* OPEN MODAL */
+
+function openProduct(productId){
+const product = products[productId];
+
+document.getElementById("modalTitle")
+.textContent = product.title;
+
+document.getElementById("modalCategory")
+.textContent = product.category;
+
+document.getElementById("modalReviews")
+.textContent = product.reviews;
+
+document.getElementById("modalDescription")
+.textContent = product.description;
+
+document.getElementById("modalIngredients")
+.textContent = product.ingredients;
+
+document.getElementById("modalUsage")
+.textContent = product.usage;
+
+document.getElementById("modalProductImage")
+.src = product.image;
+
+/* PRICE & SIZES */
+
+const sizeContainer =
+document.getElementById("modalSizes");
+
+sizeContainer.innerHTML = "";
+
+const firstPrice =
+Object.values(product.sizes)[0];
+
+document.getElementById("modalPrice")
+.textContent = firstPrice;
+
+Object.entries(product.sizes)
+.forEach(([size,price],index)=>{
+
+    const button =
+    document.createElement("button");
+
+    button.classList.add("modal-size-btn");
+
+    if(index===0){
+
+        button.classList.add("active");
+
+    }
+
+    button.textContent = size;
+
+    button.onclick = ()=>{
+
+        document
+        .querySelectorAll(".modal-size-btn")
+        .forEach(btn=>{
+
+            btn.classList.remove("active");
+
+        });
+
+        button.classList.add("active");
+
+        document
+        .getElementById("modalPrice")
+        .textContent = price;
+
+    };
+
+    sizeContainer.appendChild(button);
+
+});
+
+/* BENEFITS */
+
+const benefitsList =
+document.getElementById("modalBenefits");
+
+benefitsList.innerHTML = "";
+
+product.benefits.forEach(item => {
+
+    benefitsList.innerHTML += `
+        <li>${item}</li>
+    `;
+
+});
+
+/* IDEAL FOR */
+
+const ideal =
+document.getElementById("modalIdealFor");
+
+ideal.innerHTML = "";
+
+if(product.idealFor){
+
+    product.idealFor.forEach(item=>{
+
+      ideal.innerHTML += `
+<span class="ideal-tag">${item}</span>
+`;
+    });
+
+}
+
+document.getElementById("productQty")
+.value = 1;
+
+document.getElementById("productModal")
+.style.display = "flex";
+
+}
+
+
+
+
+/* CLOSE MODAL */
+
+document.querySelector(".close-modal")
+.addEventListener("click", () => {
+
+    document.getElementById("productModal")
+        .style.display = "none";
+
+});
+
+
+window.addEventListener("click", (e) => {
+
+    const modal =
+        document.getElementById("productModal");
+
+    if (e.target === modal) {
+
+        modal.style.display = "none";
+
+    }
+
+});
+
+</script>
+    
+</body>
+</html>

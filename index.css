@@ -507,6 +507,7 @@ nav{
     display:flex;
     justify-content:space-between;
     gap:50px;
+    align-items:flex-start;
 }
 .footer-logo,
 .footer-links,
@@ -532,8 +533,13 @@ nav{
 .footer-contact h4{
     margin-bottom:20px;
 }
+.footer-links{
+    margin-left:80px;
+}
 .footer-links ul{
     list-style:none;
+       margin:0;
+    padding:0;
 }
 .footer-links li{
     margin-bottom:12px;

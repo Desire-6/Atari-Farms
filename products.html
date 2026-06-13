@@ -111,29 +111,29 @@
 
     <div class="products-count">
 
-        <p>Showing <span>7 Products</span></p>
+        <p>Showing <span id="productCount">7 Products</span></p>
 
     </div>
 
     <div class="product-filters">
 
-        <button class="filter-btn active">
+        <button class="filter-btn active" data-filter="all">
             All Products
         </button>
 
-        <button class="filter-btn">
+        <button class="filter-btn" data-filter="natural-oils">
             Natural Oils
         </button>
 
-        <button class="filter-btn">
+        <button class="filter-btn" data-filter="hair-care">
             Hair Care
         </button>
 
-        <button class="filter-btn">
+        <button class="filter-btn" data-filter="bundles">
             Bundles
         </button>
 
-        <button class="filter-btn">
+        <button class="filter-btn" data-filter="wellness">
             Wellness
         </button>
 
@@ -187,7 +187,7 @@
 
         <!-- PURE AVOCADO OIL -->
 
-        <div class="product-card">
+        <div class="product-card" data-category="natural-oils">
 
             <div class="product-image"
                  onclick="openProduct('pure-avocado-oil')">
@@ -251,7 +251,7 @@
 
         <!-- ROSEMARY OIL -->
 
-        <div class="product-card">
+        <div class="product-card" data-category="natural-oils">
 
             <div class="product-image"
                  onclick="openProduct('rosemary-oil')">
@@ -315,7 +315,7 @@
 
         <!-- LAVENDER OIL -->
 
-        <div class="product-card">
+        <div class="product-card" data-category="natural-oils">
 
             <div class="product-image"
                  onclick="openProduct('lavender-oil')">
@@ -379,7 +379,7 @@
 
         <!-- ROOT & REVIVE -->
 
-        <div class="product-card">
+        <div class="product-card" data-category="hair-care">
 
             <div class="product-image"
                  onclick="openProduct('root-revive')">
@@ -443,7 +443,7 @@
 
         <!-- HAIR BUTTER -->
 
-        <div class="product-card">
+        <div class="product-card" data-category="hair-care">
 
             <div class="product-image"
                  onclick="openProduct('hair-butter')">
@@ -507,7 +507,7 @@
 
         <!-- POWER DUO -->
 
-        <div class="product-card">
+        <div class="product-card" data-category="bundles">
 
             <div class="product-image"
                  onclick="openProduct('power-duo')">
@@ -571,7 +571,7 @@
 
         <!-- AVOCHAI -->
 
-        <div class="product-card">
+        <div class="product-card" data-category="wellness">
 
             <div class="product-image"
                  onclick="openProduct('avochai')">
@@ -1261,7 +1261,28 @@ window.addEventListener("click", (e) => {
     }
 
 });
-
+</script>
+<script>
+    const filterButtons = document.querySelectorAll(".filter-btn");
+    const productCards = document.querySelectorAll(".product-card");
+    filterButtons.forEach(button => {
+        button.addEventListener("click", () => {
+            filterButtons.forEach(btn => btn.classList.remove("active"));
+            button.classList.add("active");
+            document.querySelector('.products-grid').scrollIntoView({ behavior: 'smooth', block: 'start' });
+            const filter = button.dataset.filter;
+            let visibleCount = 0;
+            productCards.forEach(card => {
+                if (filter === "all" || card.dataset.category==filter){
+                    card.style.display = '';
+                    visibleCount++;
+                } else {
+                    card.style.display = "none";
+                }
+            });
+                document.getElementById('productCount').textContent = visibleCount + (visibleCount === 1 ? ' Product' : ' Products');
+        });
+    });
 </script>
     
 </body>
